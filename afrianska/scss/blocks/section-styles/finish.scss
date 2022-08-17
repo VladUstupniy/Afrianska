@@ -1,0 +1,196 @@
+.finish {
+    padding: 0px 0px 52px 0px;
+
+    @media (min-width: 768px) {
+        padding: 0px 0px 102px 0px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 0px 0px 152px 0px;
+    }
+}
+.finish__row {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 56px 0px;
+
+    @media (min-width: 768px) {
+        margin: 0px 0px 76px 0px;
+    }
+    
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        margin: 0px 0px 96px 0px;
+    }
+}
+.finish__title {
+    text-align: center;
+    color: $blue-01;
+    margin: 0px 0px 20px 0px;
+    
+    @media (min-width: 1200px) {
+        text-align: left;
+        margin: 0px 0px 0px 0px;
+    }
+}
+.finish__text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $blue-01;
+    opacity: 0.6;
+}
+.finish__card-b {
+    text-align: center;
+    margin: 0px 0px 49px 0px;
+    padding: 28px 0px 0px 0px;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    background-image: url('../img/finish/card-b-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        border-radius: 10px;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(89.99deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%);
+    }
+
+    @media (min-width: 768px) {
+        margin: 0px 0px 69px 0px;
+        padding: 38px 0px 0px 0px;
+    }
+    
+    @media (min-width: 1200px) {
+        text-align-last: left;
+        margin: 0px 0px 89px 0px;
+        padding: 48px 65px 0px 0px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.fcard-b__img {
+    padding: 23px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+.fcard-b__content {
+    position: relative;
+    z-index: 1;
+}
+.fcard__title {
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $white;
+}
+.fcard__text {
+    font-size: 16px;
+    line-height: 2.9;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.8;
+}
+
+.finish__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.finish__card-wrapper {
+    flex: 0 0 100%;
+    padding: 0px 24px 0px 24px;
+    margin: 0px auto 40px auto;
+
+    @media (min-width: 768px) {
+        flex: 0 0 422px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin: 0px 0px 40px 0px;
+    }
+}
+
+.finish__card {
+    height: 417px;
+    margin: 0px -24px 0px -24px;
+    border-radius: 10px;
+}
+
+.finish__card-1 {
+    position: relative;
+
+    background-image: url('../img/finish/fcard-bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        border-radius: 10px;
+        background: linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%);
+    }
+}
+
+.finish__card-2 {
+    position: relative;
+
+    background-image: url('../img/finish/fcard-bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        border-radius: 10px;
+        background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%);
+    }
+}
+
+.fcard__content {
+    position: relative;
+    z-index: 1;
+    padding: 24px 0px 0px 32px;
+}

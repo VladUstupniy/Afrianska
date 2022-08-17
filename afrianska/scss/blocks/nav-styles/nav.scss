@@ -1,0 +1,86 @@
+.nav {
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 42px 0px;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: block;
+    position: relative;
+    margin: 0px 0px 0px 16px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $blue-02;
+    text-align: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid $blue-02;
+    background: $white;
+
+    transition: all 0.2s ease-in;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $blue-02;
+        z-index: -1;
+        
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover {
+        color: $blue-04;
+    }
+
+    &:active {
+        color: $blue-01;
+    }
+
+    &:hover::before {
+        background: $blue-04;
+    }
+
+    &:active::before {
+        background: $blue-01;
+    }
+}
+
+.nav__menu {
+    span {
+        display: block;
+        margin: 0px 0px 3px 0px;
+        width: 24px;
+        height: 3px;
+        background: $blue-03;
+        transition: all 0.2s ease-in;
+    }
+
+    span:last-child {
+        margin: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        span{
+            background: $blue-04;
+        }
+    }
+}

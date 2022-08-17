@@ -1,0 +1,313 @@
+.footer {
+    background-color: $blue-02;
+    border-radius: 0px 100px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+    @media (min-width: 768px) {
+        border-radius: 0px 200px 0px 0px;
+        margin: 0px 96px 0px 0px;
+    }
+}
+.footer__wrapper-before {
+    position: relative;
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 85%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $white;
+        opacity: 0.4;
+    }
+}
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer__row-01 {
+    padding: 21px 0px 46px 0px;
+
+    @media (min-width: 768px) {
+        padding: 51px 0px 66px 0px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 91px 0px 96px 45px;
+    }
+}
+.footer__row-02 {
+    justify-content: space-between;
+    padding: 27px 0px 44px 0px;
+
+    @media (min-width: 768px) {
+        padding: 57px 0px 54px 0px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 97px 0px 64px 45px;
+    }
+}
+.footer__title {
+    text-align: center;
+    width: 100%;
+    color: $white;
+    margin: 0px 0px 32px 0px;
+    padding: 0px 15px 0px 0px;
+    
+    @media (min-width: 1200px) {
+        text-align: left;
+        width: 40%;
+        padding: 0;
+    }
+}
+.footer__text {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 30px 0px 0px;
+    
+    @media (min-width: 1200px) {
+        text-align: left;
+        width: 60%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+}
+.footer__btn {
+    margin: 0 auto;
+    background-color: $blue-04;
+    padding: 15px 75px 0px 75px;
+    @media (min-width: 1200px) {
+        margin: 0px 0px 0px 0px;
+        width: 30%;
+    }
+}
+.footer__contacts {
+    width: 100%;
+    margin: 0px 0px 60px 0px;
+    
+    @media (min-width: 1200px) {
+        width: 35%;
+        margin: 0px 100px 0px 0px;
+    }
+}
+.footer__logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 33px 0px;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+        justify-content: flex-start;
+    }
+}
+.footer__logo-img {
+    display: block;
+    position: relative;
+    margin: 0px 0px 0px 16px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $blue-02;
+    text-align: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid $blue-02;
+    background: $white;
+
+    transition: all 0.2s ease-in;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $blue-05;
+        z-index: 1;
+        
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover {
+        color: $blue-04;
+    }
+
+    &:active {
+        color: $blue-01;
+    }
+
+    &:hover::before {
+        background: $blue-04;
+    }
+
+    &:active::before {
+        background: $blue-01;
+    }
+}
+.footer__logo-text {
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $white;
+    margin: 0px 0px 0px 16px;
+
+    @media (min-width: 768px) {
+        font-size: 26px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 28px;
+    }
+}
+.footer__list--ate li {
+    position: relative;
+    margin: 0px 0px 24px 0px;
+    padding: 0px 0px 0px 0px;
+
+    @media (min-width: 1200px) {
+        padding: 0px 0px 0px 35px;
+    }
+}
+.before-a {
+    &::before {
+        position: absolute;
+        display: none;
+        content: 'A.';
+        top: 1px;
+        left: 0;
+    }
+
+    @media (min-width: 1200px) {
+        &::before {
+            position: absolute;
+            display: block;
+            content: 'A.';
+            top: 1px;
+            left: 0;
+        }
+    }
+}
+.before-t {
+    &::before {
+        position: absolute;
+        display: none;
+        content: 'T.';
+        top: 1px;
+        left: 0;
+    }
+
+    @media (min-width: 1200px) {
+        &::before {
+            position: absolute;
+            display: block;
+            content: 'T.';
+            top: 1px;
+            left: 0;
+        }
+    }
+}
+.before-e {
+    &::before {
+        position: absolute;
+        display: none;
+        content: 'E.';
+        top: 1px;
+        left: 0;
+    }
+
+    @media (min-width: 1200px) {
+        &::before {
+            position: absolute;
+            display: block;
+            content: 'E.';
+            top: 1px;
+            left: 0;
+        }
+    }
+}
+.footer__list {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $white;
+
+    @media (min-width: 1200px) {
+        text-align: left;
+    }
+}
+.footer__list li {
+    margin: 0px 0px 16px 0px;
+}
+.list__link {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $white;
+}
+.footer__about {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+    
+    @media (min-width: 1200px) {
+        text-align: left;
+        margin: 0px 77px 0px 0px;
+    }
+}
+.footer__title-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: $white;
+    margin: 0px 0px 32px 0px;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+}
+.footer__follow {
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        text-align: left;
+        width: 25%;
+    }
+}
+.footer__copyright {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.4;
+    padding: 0px 0px 64px 0px;
+
+    @media (min-width: 1200px) {
+        text-align: left;
+        padding: 0px 0px 64px 40px;
+    }
+}

@@ -1,0 +1,5 @@
+.header {
+  background: rgb(234, 243, 250);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(234, 243, 250)), color-stop(50%, rgb(255, 255, 255)));
+  background: linear-gradient(0deg, rgb(234, 243, 250) 0%, rgb(255, 255, 255) 50%);
+}
